@@ -1,0 +1,13 @@
+a) Liste e descreva o que são as 4 etapas do processo de compilação.
+1- Pré-processamento: Etapa na qual o compilador trata das diretivas que foram inseridas com o sinal “#” (exemplo: #include). Ademais, nessa atepa os comentários são suprimidos.
+2- Compilação: Etapa na qual o compilador irá verificar/validar o código inserido e a seguir, traduzir tal código para a linguagem de máquina. Assim, é feita a leitura das instruções que devem ser executadas, podendo em caso de erro de sintaxe não ocorrer devidamente.
+3- Montagem: Etapa em que é gerado um arquivo binário com a as instruções para que seja interpretado pelo compilador.
+4- Lincagem: Etapa em que os arquivos binários gerados são lincados para a construção de um arquivo executável autônomo que por fim será entregue aos usuários.
+
+b) O compilador gcc permite fornecer parâmetros extras, que modificam desde a emissão de erros até o binário final, o otimizando para determinados comportamentos. Explique a função dos seguintes parâmetros:
+i) -static: especifica que a vinculação é estática
+ii) -g: gera informações de depuração padrão não binário
+iii) -pedantic: emite todos os avisos exigidos pelo padrão ANSI/ISO C
+iv) -Wall: emite todos os avisos que o gcc pode fornecer
+v) -Os: otimiza a compilação considerando o tamanho
+vi) -O3: otimiza a compilação, habilita a otimização -O2 e mais algumas funções
