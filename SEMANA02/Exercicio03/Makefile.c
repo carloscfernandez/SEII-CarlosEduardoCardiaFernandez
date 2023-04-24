@@ -16,6 +16,14 @@ libed;
 myapps;
   gcc -c $(APPS)/app.c $(OBJ)/.o -I $(INCLUDE) -o .(BIN)/app
   gcc -c $(APPS)/app_com_mytime.c $(OBJ)/.o -I $(INCLUDE) -o .(BIN)/app_com_mytime.o
+  
+makae float_vrctor.o
+% ==> float_vector
+
+$(SCR)/float_vector.c $(INCLUDE)/float_vector.h
+
+%.o: $(SRC)/%.c $(INCLUDE)/%.h
+  gcc -c $c -I $(INCLUDE) -o $(OBJ)/$@
     
 run;
   ./bin/app
