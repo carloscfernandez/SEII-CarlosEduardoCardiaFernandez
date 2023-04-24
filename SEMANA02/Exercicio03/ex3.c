@@ -6,9 +6,12 @@ int main () {
   FLoatVector * vec = FloatVector_create(2);
   FloatVector_print(vec);
   
+  timer t1 = tic();
   FloatVector_append(vec, 0.0);
   FloatVector_append(vec, 0.0);
   FloatVector_print(vec);
+  timer t2 = tac();
+  printf("Tempo de processamento: %f\n", comptime(t1, t2);
   
   FloatVector_destroy(&vec);
   
