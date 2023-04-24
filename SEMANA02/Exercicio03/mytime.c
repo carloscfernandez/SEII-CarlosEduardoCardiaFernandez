@@ -14,6 +14,6 @@ timer tic();
 //marca o final do trecho do tempo;
 timer tac();
 
-float compTime(timer tic, timer tac);
+float comptime(timer tic, timer tac);
 
 #endif
